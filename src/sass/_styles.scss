@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+.search-form {
+  margin-top: 25px;
+  text-align: center;
+}
+.input {
+  width: 300px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(242, 247, 235);
+  border-radius: 5px;
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 18px;
+    color: darkslategray;
+  }
+}
+
+.cardGallery {
+  display: flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn_loadMore {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  height: 80px;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: rgb(103, 184, 231);
+  cursor: pointer;
+}
+
+.is_hidden {
+  display: none;
+}
+.photos_box {
+  margin-left: auto;
+  margin-right: auto;
+  flex-basis: calc((100% / 2) - 30px);
+}
+.photo-card {
+  margin-bottom: 10px;
+}
+.img {
+  margin-bottom: 10px;
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  &-item {
+    display: inline-flex;
+    margin-right: 15px;
+    align-items: center;
+  }
+  &-item-box {
+    display: flex;
+    align-items: center;
+  }
+}
+.material-icons {
+  margin-right: 8px;
+}
